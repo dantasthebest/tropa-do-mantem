@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 90vh;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: black;
+    width: 1080;
+    padding: 1px;
+}
+.logofesta {
+    width: 120px;
+    cursor: pointer;
+}
+
+.logo,.sociais {
+    width: 25%;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu nav a{
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu nav a::after {
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after {
+    width: 30px;
+}
+section.hero-site {
+    height: 90vh;
+    background-image: url(img/Novo\ Projeto213142\ \(1\)\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-site .interface {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1{
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 50;
+    margin-left: 570px;
+}
+
+.hero-site .txt-hero h1 span{
+    display: block;
+    font-weight: 800;
+}
+
+
+.hero-site .txt-hero p span {
+    display: block;
+}
+
+.conhecer {
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.conhecer:hover {
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+}
+
+section.como-funciona {
+    padding: 80px 0;
+   
+}
+
+.txt-funciona, .instrucoes {
+    display: inline-block;
+    width: 80%;
+    margin-right: -4px;
+    vertical-align: top;
+    color: #fff;
+}
+
+.como-funciona .txt-funciona h3 {
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 200;
+    margin-left: 350px;
+}
+
+.como-funciona .txt-funciona{
+    position: sticky;
+    top: 50%;
+    padding-bottom: 30px;
+    padding-top: 0px;
+}
+
+.como-funciona .txt-funciona h3 span {
+    display: block;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 1000;
+    font-style: normal;  
+}
+
+.instrucoes .instru-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 40px;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    color: #fff;
+    margin-left: 1000px;
+}
+
+.instrucoes .instru-box img {
+    max-width: 100px;
+}
+
+.instrucoes .instru-box h4 {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.instrucoes .instru-box h4 span{
+    font-weight: 100;
+}
+
+.instrucoes .instru-box p{
+    font-size: 14px;
+}
+
+section.contato {
+    background-color: rgb(22, 22, 22);
+    padding: 80px 0;
+}
+
+.txt-contato, .icons-contato {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3 {
+    font-size: 2.5em;
+    line-height: 35px;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    left: 500px;
+}
+
+.carne button{
+    width: 270px;
+    height: 30px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.5s;
+    margin-top: 0px;
+}
+
+.carne button:hover{
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+
+.carne input {
+    width: 270px;
+    height: 30px;
+    margin-top: 10px;
+    transition: 0.5s;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.carne input:focus{
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contato .txt-contato h3 span {
+    display: block;
+    font-weight: 1000;
+}
+
+.contato .icons-contato a{
+    text-decoration: none;
+}
+
+.contato .icons-contato button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    height: 60px;
+    margin: 0 40px 20px ;
+    padding: 0 60px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.contato .icons-contato button i{
+    font-size: 20px;
+    color: #fff;
+}
+
+.contato .icons-contato button:hover {
+    background-color: #fff;
+}
+
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: black;
+}
+
+.contato .txt-contato p {
+    color: #fff;
+    position: relative;
+    left: 500px;
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .top-footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+footer .top-footer a{
+    text-decoration: none;
+}
+
+footer .top-footer button:hover{
+    background-color: #fff;
+    color: #000000;
+}
+
+footer .middle-footer{
+    margin: 20px 0;
+}
+
+footer .middle-footer a{
+    margin: 0 15px;
+    color: #fff;
+}
+
+footer .bottom-footer {
+    border-top: 2px solid #fff;
+}
+
+footer .bottom-footer p{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.container1 {
+    background-color: #1a1a1a;
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    color: #fff;   
+    padding: 0 50px;
+
+}
+
+.carne {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 15px;
+    margin: 5px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container1 img{
+    width: 270px;
+    height: 180px;
+}
+
+.bcontato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+    
+.contatosection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: none;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 2px solid #fff;
+}
+section h2 {
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+
+}
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.orcamento label {
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+.orcamento input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+.orcamento input:focus {
+    border-radius: 16px;
+}
+.orcamento textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+.orcamento textarea:focus {
+    border-radius: 16px;
+}
+.orcamento button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+.orcamento button:hover {
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
